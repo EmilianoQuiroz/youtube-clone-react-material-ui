@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'https://youtube-v31.p.rapidapi.com/captions';
+const BASE_URL = 'https://youtube-v31.p.rapidapi.com';
 
 const options = {
     params: {
@@ -13,5 +13,7 @@ const options = {
   };
 
   export const fetchFromAPI = async (url) => {
-    await axios.get(`${BASE_URL}/${url}`, options);
+    const { data } = await axios.get(`${BASE_URL}/${url}`, options);
+
+    return data;
   }
