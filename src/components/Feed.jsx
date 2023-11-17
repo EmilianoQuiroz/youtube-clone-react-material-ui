@@ -33,6 +33,7 @@ const Feed = () => {
         </Typography>
 
         <Videos videos={videos}/>
+        
       </Box>
     </Stack>
   )
