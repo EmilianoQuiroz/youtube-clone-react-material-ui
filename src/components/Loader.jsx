@@ -1,4 +1,3 @@
-import React from 'react'
 
 const Loader = () => {
   return (
@@ -6,4 +5,4 @@ const Loader = () => {
   )
 }
 
-export default Loader
+export default Loader;
